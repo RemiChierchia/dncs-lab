@@ -1,0 +1,18 @@
+FirstName: Remi
+LastName: Chierchia
+MatriculationNumber: 192874
+AcademicYear: 2019-2020
+GitHubUrl: https://github.com/RemiChierchia/dncs-lab
+Subnets:
+  HostsA:
+    RequiredAddresses: 175
+    SubnetAddress: 192.168.110.0
+    SubnetPrefixLength: 255.255.255.0
+  HostsB:
+    RequiredAddresses: 454
+    SubnetAddress: 192.168.10.0
+    SubnetPrefixLength: 255.255.254.0
+  Hub:
+    RequiredAddresses: 230
+    SubnetAddress: 192.168.12.0
+    SubnetPrefixLength: 255.255.255.0
