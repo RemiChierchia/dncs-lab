@@ -1,7 +1,7 @@
 export DEBIAN_FRONTEND=noninteractive
 sudo su
 apt-get update
-apt-get install -y tcpdump apt-transport-https ca-certificates curl software-properties-common
+apt-get install -y tcpdump
 sysctl net.ipv4.ip_forward=1
 ip link set dev enp0s8 up
 ip link set dev enp0s9 up
