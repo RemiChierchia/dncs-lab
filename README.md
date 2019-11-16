@@ -58,7 +58,7 @@ This repository contains the Vagrant files required to run the virtual lab envir
 # How-to
  - Install Virtualbox and Vagrant
  - Clone this repository
-`git clone https://github.com/RemiChierchia/dncs-lab`
+`git clone https://github.com/dustnic/dncs-lab`
  - You should be able to launch the lab from within the cloned repo folder.
 ```
 cd dncs-lab
@@ -70,12 +70,10 @@ Once you launch the vagrant script, it may take a while for the entire topology 
  [dncs-lab]$ vagrant status                                                                                                                                                                
 Current machine states:
 
-router-1                  running (virtualbox)
-router-1                  running (virtualbox)
+router                    running (virtualbox)
 switch                    running (virtualbox)
 host-a                    running (virtualbox)
-host-b                    running (virtualbox
-host-c                    running (virtualbox)
+host-b                    running (virtualbox)
 ```
 - Once all the VMs are running verify you can log into all of them:
 `vagrant ssh router`
@@ -286,21 +284,17 @@ allowed me to auto-initialize all the virtual machines and their links via the s
 
 # Testing
 
+My repo's desing is here:
 ```
+https://github.com/RemiChierchia/dncs-lab
 
-In order to log in a specific virtual machine, you can just run this command:
-`vagrant ssh [machine]`
-where [machine] is `router-1`, `host-a` etc.
-You should get an Ubuntu's welcome message like:
-`Welcome to Ubuntu ...`
-
- In order to get the web-page, this command can be runned from hosts a and b:
+```
+In order to get the web-page, this command can be runned from hosts a and b:
 ```
    curl 192.168.12.25:80/index.html
-
 ```  
 
-## Routing
+## Routing tables
 
 The routing tables fot each VM are following:
 
